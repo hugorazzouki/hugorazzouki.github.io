@@ -1,0 +1,48 @@
+/*Nav*/
+
+html,body {
+	font-family: raleway;
+}
+.centre {
+ 	display: flex;
+ 	justify-content: center;
+ 	align-items: center;
+}
+.flexAround {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.flexBetween {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.decorationLienNav {
+	text-decoration: none;
+}
+.taillenavigation {
+	height: 100px;
+}
+.tailleLiens {
+	width: 45%;
+}
+.tailleLien {
+	width: 140px;
+	height: 99px;
+}
+.colorLien13 {
+	color: #0065FC;
+}
+.colorLien2 {
+   color: black ;
+}
+.bordure1 {
+	border-top: 1px solid #0065FC;
+}
+.bordure23 {
+	border-top: 1px solid transparent;
+}
+.marglogo {
+	margin-bottom: 10px;
+}
