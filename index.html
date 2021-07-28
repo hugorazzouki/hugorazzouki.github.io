@@ -19,11 +19,11 @@
 			 src="C:\Travail\Reservia2\images\logo/Reservia@3x.png" alt="logo reservia" width="110px" height="40px"/>
 			<div class="tailleLiens flexAround"> 
 				<div class="tailleLien centre  bordure1">
-					<a class="colorLien13 decorationLienNav" href="#Hébergements">Hébergements</a></div>
+					<a class="couleurBleu decorationLienNavNone" href="#Hébergements">Hébergements</a></div>
 				<div class="tailleLien centre bordure23">
-					<a class="colorLien2 decorationLienNav" href="#Activités">Activités</a></div>
+					<a class="colorLien2 decorationLienNavNone" href="#Activités">Activités</a></div>
 				<div class="tailleLien centre bordure23">
-					<a class="colorLien13 decorationLienNav" href="">S'inscrire</a></div>
+					<a class="couleurBleu decorationLienNavNone" href="">S'inscrire</a></div>
 			</div>
 		</div>	
 		</nav>
@@ -33,10 +33,12 @@
 				<p>En plein centre ville ou en pleine nature</p>
 			</div>
 				<form method="post" action="traitement.php">
-					<div>
-						<i class="fas fa-map-marker-alt"></i>
-						<input type="text" name="lieu" type="search">
-					<button><i class="fas fa-search"></i></button></div>
+					<div class=" bordureSearch centre">
+						<div class=" backGris centre iconTaille"><i class="fas fa-map-marker-alt"></i></div>
+						<div>
+							<input class="recherche centre bordureNone espaceRecherche " type="text" name="lieu" type="search" value="Marseille, France"></div>
+						<div class="backBleu centre boutonRecherche">Rechercher</div>
+					</div>
 				<div>
 					<p><strong><div>Filtres  <i class="fas fa-money-bill-wave">Economique</i><i class="fas fa-child">Familial</i><i class="fas fa-heart">Romantique</i><i class="fas fa-dog">Animaux autorisés</i></div></strong></p>
 				</div>	
