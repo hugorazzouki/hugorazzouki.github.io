@@ -2,6 +2,15 @@
 
 html,body {
 	font-family: raleway;
+	margin: 0px;
+}
+main,header {
+	width: 95%;
+	margin: 0px auto;
+}
+img {
+  max-width: 100%;
+  box-sizing: border-box;
 }
 .centre {
  	display: flex;
@@ -18,6 +27,22 @@ html,body {
 	justify-content: space-between;
 	align-items: center;
 }
+.centreColonne {
+ 	display: flex;
+ 	justify-content: center;
+ 	align-items: center;
+ 	flex-direction: column;
+}
+.flexColonneAround {
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+}
+.flexColonneBetween {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+}
 .bordureNone {
 	border: none;
 }
@@ -31,7 +56,10 @@ html,body {
 	height: 100px;
 }
 .tailleLiens {
-	width: 45%;
+	width: 100%;
+}
+.tailleLiens12 {
+	margin-left: 60%;
 }
 .tailleLien {
 	width: 140px;
@@ -52,11 +80,36 @@ html,body {
 .backGris {
 	background-color: #F2F2F2;
 }
-.bordure1 {
-	border-top: 1px solid #0065FC;
+.backBlanc {
+	width: 30%;
+	height: auto;
+	background-color: white;
+	padding: 0.5%;
+	border-radius: 20px;
 }
-.bordure23 {
+.backBlanc:hover {
+	cursor: pointer;
+	transform: scale(1.1);
+}
+.backBlanc2 {
+	background-color: white;
+	height: auto;
+	padding: 1% 0 1% 1%;
+	border-radius: 20px;
+}
+.backBlanc2:hover {
+	cursor: pointer;
+	transform: scale(1.05);
+}
+.bordure1 {
 	border-top: 1px solid transparent;
+}
+.bordure1:hover {
+	border-top: 1px solid #0065fc;
+	cursor: pointer;
+}
+.bordure1:hover > a {
+	color: #0065fc;
 }
 .marglogo {
 	margin-bottom: 10px;
@@ -65,20 +118,20 @@ html,body {
 	width: 400px;
 	border-radius: 10px;
 	border: 0.5px solid #F2F2F2;
-	 ;
+
 	}
 .espaceRecherche {
 	padding-left: 20px;
 }
 .boutonRecherche {
 	height: 50px;
-	width: 120px;
+	width: 150px;
 	color: white;
 	cursor: pointer;
 	border-radius: 0 10px 10px 0;
 }
 .recherche {
-	height: 30px;
+	height: 45px;
 	width: 230px;
 	font-size: 18px;
 	color: black;
@@ -86,6 +139,261 @@ html,body {
 } 
 .iconTaille {
 	height: 50px;
-	width: 50px;
+	width: 80px;
 	border-radius: 10px 0 0 10px;
+}
+.FiltreGras {
+	font-weight: bold;
+}
+.Filtres { 
+	display: flex;	
+}
+.margeFiltre {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+.margeFiltresTitre {
+	margin-right: 20px;
+}
+
+.boutonI {
+	width: 20px;
+	height: 20px;
+	color: #0065fc;
+	border: 2px solid #F2F2F2;
+	border-radius: 25px;
+	margin-right: 10px;
+}
+.info {
+	display: flex;
+	align-items: center;
+}
+.filtreTexteIcon {
+	border: 2px solid #F2F2F2;
+	height: 50px;
+	border-radius: 30px;
+	margin-right: 20px;
+}
+.filtreTexteIcon:hover > .filtreTexte {
+	color: #0065fc;
+
+}
+.filtreTexteIcon:hover > .filtreIcon {
+	color: white;
+	background-color: #0065fc;
+}
+.filtreTexte {
+	height: 50px;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-radius: 0 25px 25px 0;
+}
+.filtreIcon {
+	margin-left:-2px;
+	border-radius: 25px;
+	width: 52px;
+	height: 52px;
+	color: #0065fc;
+	background-color: #deebff;
+}
+.Bold {
+	font-weight: bold;
+}
+.tailleHébergements {
+	flex: 2;
+	height: 650px;
+	margin-right: 20px;
+	border-radius: 10px;
+}
+.hauteurPopulaire {
+	height: 88%;
+}
+.taillePopulaires {
+	flex: 1;
+	height: 650px;
+	margin-left: 20px;
+	border-radius: 10px;
+}
+.blocHébergements {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.blocPopulaires {
+	padding-right: 20px;
+	padding-bottom: 20px;
+}
+.blocPopulaires12 {
+	margin-bottom: 20px;
+}
+.bloc1 {
+	margin-bottom: 10px;
+}
+.bloc2 {
+	margin-top: 10px;
+}
+.cubeBackBlanc {
+	width: 90%;
+}
+.cubeBackBlanc2 {
+	width: 60%;
+	padding-left: 5%;
+}
+/* Image */
+.imgHébergements {
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 120px;
+	border-radius: 15px 15px 0 0;
+	object-fit: cover;
+}
+.imgPopulaires {
+	background-size: cover;
+	background-position: center;
+	width: 35%;
+	height: 160px;
+	border-radius: 15px 0 0 15px;
+	object-fit: cover;
+}
+.imgActivités {
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 530px;
+	border-radius: 15px 15px 0 0;
+	object-fit: cover;
+}
+.imgActivités2 {
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 250px;
+	border-radius: 15px 15px 0 0;
+	object-fit: cover;
+}
+.imgActivités3 {
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 150px;
+	border-radius: 15px 15px 0 0;
+	object-fit: cover;
+}
+.imgActivités56 {
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 200px;
+	border-radius: 15px 15px 0 0;
+	object-fit: cover;
+}
+/* Activités*/
+.activités {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+.blocActivités {
+	width: 100%;
+	height: 600px;
+}
+.blocActivités2356 {
+	width: 23%;
+	height: 600px;
+}
+.cubeActivités {
+	width: 22%;
+	border-radius: 15px;
+	box-shadow: 5px 5px 5px 1px #f2f2f2;
+}
+.cubeActivités:hover {
+	cursor: pointer;
+	transform: scale(1.05);
+}
+.cubeActivités2356 {
+	width: 100%;
+	border-radius: 15px;
+	box-shadow: 5px 5px 5px 1px #f2f2f2;
+}
+.cubeActivités2356:hover {
+	cursor: pointer;
+	transform: scale(1.1);
+}
+.hauteurTitre {
+	height: 70px;
+}
+.titreActivités {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding-left: 5%;
+	width: 95%;
+}
+/*Footer*/
+.footer {
+	height: 300px;
+	margin-top: 100px;
+	padding-top: 100px;
+}
+.TailleBlocFooter {
+	height: 150px;
+}
+.margeBlocFooter1 {
+	margin-left: 5%;
+}
+.margeBlocFooter2 {
+	margin-right: 15%;
+}
+.hauteurLienFooter {
+	height: 30px;
+}
+.flexBetweenFooter {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+/* responsive*/
+@media screen and (max-width: 1023px) {
+ .tailleLiens12 {
+ 	margin-left: 35%;
+ }
+ .cubeBackBlanc {
+ 	min-height: 150px;
+ }
+ .tailleHébergements {
+ 	min-height: auto;
+ 	padding: 20px;
+ }
+ .taillePopulaires {
+ 	min-height: auto;
+ 	padding: 20px;
+ }
+ .tabletteTitrePopulaire{
+ 	 margin-top: 0px;
+ }
+}
+@media screen and (max-width: 984px) {
+.tabletteFiltreColonne {
+	flex-direction: column;
+	align-items: flex-start;
+}
+.filtreTexteIcon {
+ margin-bottom: 20px;
+}
+#Hébergements {
+	flex-direction: column-reverse;
+	width: 100%;
+}
+.taillePopulaires {
+	flex: none;
+	width: 90%;
+	margin-left: 0;
+	padding: 5%;
+}
+.tailleHébergements {
+	flex: none;
+	width: 90%;
+	margin-right: 0;
+	margin-top: 50px;
+	padding: 5%;
+}
 }
