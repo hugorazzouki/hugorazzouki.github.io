@@ -3,26 +3,26 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-			<title>Reservia acceuil</title>
-			<link href="Fontawesome/css/all.css" rel="stylesheet">
-			<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
-			<link rel="stylesheet" href="style.css">	
+		<title>Reservia acceuil</title>
+		<link href="Fontawesome/css/all.css" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="style.css">	
 	</head>
 <body>
 	<header>
-		<nav class=".taillenavigation">
+		<nav class="taillenavigation">
 		<div class="tailleLiens flexBetween">
 			<img 
-			class="marglogo"
-			 src="images\logo/Reservia@3x.png" alt="logo reservia" width="110px" height="40px"/>
+			class="marglogo tailleLogo"
+			 src="images/logo/Reservia@3x.png" alt="logo reservia"/>
 			 
 				<div class="centre tailleLiens12">
-					<div class="tailleLien centre  bordure1">
-						<a class="colorLien2 decorationLienNavNone" href="#Hébergements">Hébergements</a></div>
-					<div class="tailleLien centre bordure1">
-						<a class="colorLien2 decorationLienNavNone" href="#Activités">Activités</a></div>
+					<div class="tailleLien centre tailleLienMobile bordure1">
+						<a class="colorLien2 decorationLienNavNone" href="#Hebergements">Hébergements</a></div>
+					<div class="tailleLien centre tailleLienMobile bordure1">
+						<a class="colorLien2 decorationLienNavNone" href="#Activites">Activités</a></div>
 				</div>
 				<div class="tailleLien centre bordure1">
 					<a class=" Bold couleurBleu decorationLienNavNone" href="#">S'inscrire</a>
@@ -38,8 +38,12 @@
 					<div class=" bordureSearch centre">
 						<div class=" backGris centre iconTaille"><i class="fas fa-map-marker-alt"></i></div>
 						<div>
-							<input class="recherche centre bordureNone espaceRecherche " type="text" name="lieu" type="search" value="Marseille, France"></div>
-						<div class="backBleu centre boutonRecherche">Rechercher</div>
+							<input class="recherche centre bordureNone espaceRecherche " name="lieu" type="search" value="Marseille, France"/>
+						</div>
+						<div class="backBleu centre boutonRecherche">
+						<span class="mobileNone">Rechercher</span>
+						<span class="desktopNone"><i class="fas fa-search"></i></span>
+						</div>
 					</div>
 				<div class="filtreGras Filtres margeFiltre Bold tabletteFiltreColonne">
 					<div class="margeFiltresTitre"> <h2>Filtres</h2></div>
@@ -66,12 +70,12 @@
 	</header>
 	
 	<main class="main">
-		<section id="Hébergements" class="flexAround">
-				<div class="tailleHébergements backGris  flexColonneAround blocHébergements">
+		<section id="Hebergements" class="flexAround">
+				<div class="tailleHebergements backGris  flexColonneAround blocHebergements">
 					<h2>Hébergements à Marseille</h2>
 					<div class="bloc1 flexBetween">
 						<div class="backBlanc centreColonne">
-							<img src="images\hebergements\4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" class="imgHébergements">
+							<img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="" class="imgHebergements">
 							<div class="cubeBackBlanc">
 								<h3>Auberge la Cannebière</h3>
 								<p>Nuit à partir de <span class="Bold">25€</span></p>
@@ -84,7 +88,7 @@
 								</div>
 						</div>
 						<div class="backBlanc centreColonne">
-							<img src="images\hebergements\4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" class="imgHébergements">
+							<img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="" class="imgHebergements">
 							<div class="cubeBackBlanc">
 								<h3>Hôtel du port</h3>
 								<p>Nuit à partir de <span class="Bold">252€</span></p>
@@ -97,7 +101,7 @@
 							</div>
 						</div>
 						<div class="backBlanc centreColonne">
-							<img src="images\hebergements\4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" class="imgHébergements">
+							<img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="" class="imgHebergements">
 							<div class="cubeBackBlanc">
 								<h3>Hôtel Les mouettes</h3>
 								<p>Nuit à partir de <span class="Bold">76€</span></p>
@@ -112,7 +116,7 @@
 					</div>
 					<div class="bloc2 flexBetween">
 						<div class="backBlanc centreColonne">
-							<img src="images\hebergements\4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" class="imgHébergements">
+							<img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="" class="imgHebergements">
 								<div class="cubeBackBlanc">
 									<h3>Hôtel de la mer</h3>
 									<p>Nuit à partir de <span class="Bold">46€</span></p>
@@ -125,7 +129,7 @@
 								</div>
 						</div>
 						<div class="backBlanc centreColonne">
-							<img src="images\hebergements\4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" class="imgHébergements">
+							<img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="" class="imgHebergements">
 								<div class="cubeBackBlanc">
 									<h3>Auberge Le Panier</h3>
 									<p>Nuit à partir de <span class="Bold">23€</span></p>
@@ -138,7 +142,7 @@
 								</div>
 						</div>
 						<div class="backBlanc centreColonne">
-							<img src="images\hebergements\4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" class="imgHébergements">
+							<img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="" class="imgHebergements">
 								<div class="cubeBackBlanc">
 									<h3>Hôtel chez Amina</h3>
 									<p>Nuit à partir de <span class="Bold">96€</span></p>
@@ -154,14 +158,14 @@
 					<div></div>
 					<p class="Bold">Afficher plus</p>	 		
 				</div>
-			<div class="taillePopulaires backGris blocHébergements">
+			<div class="taillePopulaires backGris blocHebergements">
 					<div class="flexBetween">
 						<h2 class="tabletteTitrePopulaire">Les plus populaires</h2>
 						<div><i class="fas fa-chart-line"></i></div>
 					</div>
 				<div class="flexColonneAround hauteurPopulaire">
 					<div class="centre backBlanc2">
-						<img src="images\hebergements\4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" class="imgPopulaires">
+						<img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="" class="imgPopulaires">
 						<div class="cubeBackBlanc2">
 							<h3>Hôtel Le soleil du matin</h3>
 							<p>Nuit à partir de <span class="Bold">128€</span></p>
@@ -174,7 +178,7 @@
 						</div>
 					</div>
 					<div class="centre backBlanc2">
-						<img src="images\hebergements\4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" class="imgPopulaires">
+						<img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="" class="imgPopulaires">
 						<div class="cubeBackBlanc2">
 							<h3>Au coeur de l'eau Chambres d'hôtes</h3>
 							<p>Nuit à partir de <span class="Bold">71€</span></p>
@@ -187,7 +191,7 @@
 						</div>
 					</div>
 					<div class="centre backBlanc2">
-						<img src="images\hebergements\4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" class="imgPopulaires">
+						<img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="" class="imgPopulaires">
 						<div class="cubeBackBlanc2">
 							<h3>Hôtel Tout bleu et Blanc</h3>
 							<p>Nuit à partir de <span class="Bold">68€</span></p>
@@ -201,46 +205,46 @@
 					</div>					
 					</div>							
 			</div>
-	</section>						
+		</section>						
 
-		<div id="Activités">
-			<section class="activités">
-				<h2>Activités à Marseille</h2>
-			<div class="blocActivités flexBetween">
-					<div class="cubeActivités centreColonne">
-						<img src="images\activites\3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" class="imgActivités">
-						<div class="hauteurTitre titreActivités"><h3>Vieux Port</h3></div>
-					</div>
-				
-					<div class="blocActivités2356 flexColonneBetween">
-						<div class="cubeActivités2356 centreColonne">
-							<img src="images\activites\3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" class="imgActivités2">
-							<div class="hauteurTitre titreActivités"><h3>Fort de Promègues</h3></div>
+			<div id="Activites"></div>
+				<section class="activites">
+					<h2>Activités à Marseille</h2>
+				<div class="blocActivites flexBetween">
+						<div class="cubeActivites centreColonne">
+							<img src="images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="" class="imgActivites">
+							<div class="hauteurTitre titreActivites"><h3>Vieux Port</h3></div>
 						</div>
 					
-					<div class="cubeActivités2356 centreColonne">
-						<img src="images\activites\4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" class="imgActivités3">
-						<div class="hauteurTitre titreActivités"><h3>Îles du Frioul</h3></div>
+						<div class="blocActivites2356 flexColonneBetween">
+							<div class="cubeActivites2356 centreColonne">
+								<img src="images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="" class="imgActivites2">
+								<div class="hauteurTitre titreActivites"><h3>Fort de Promègues</h3></div>
+							</div>
+						
+						<div class="cubeActivites2356 centreColonne">
+							<img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="" class="imgActivites3">
+							<div class="hauteurTitre titreActivites"><h3>Îles du Frioul</h3></div>
+						</div>
 					</div>
-				</div>
-				<div class="cubeActivités centreColonne">
-						<img src="images\activites\3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" class="imgActivités">
-						<div class="hauteurTitre titreActivités"><h3>Parc National des Calanques</h3></div>
-					</div>
-				
-					<div class="blocActivités2356 flexColonneBetween">
-						<div class="cubeActivités2356 centreColonne">
-							<img src="images\activites\3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" class="imgActivités56">
-							<div class="hauteurTitre titreActivités"><h3>Notre-Dame-de-la-Garde</h3></div>
+					<div class="cubeActivites centreColonne">
+							<img src="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="" class="imgActivites">
+							<div class="hauteurTitre titreActivites"><h3>Parc National des Calanques</h3></div>
 						</div>
 					
-					<div class="cubeActivités2356 centreColonne">
-						<img src="images\activites\4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" class="imgActivités56">
-						<div class="hauteurTitre titreActivités"><h3>Parc Longchamp</h3></div>
+						<div class="blocActivites2356 flexColonneBetween">
+							<div class="cubeActivites2356 centreColonne">
+								<img src="images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="" class="imgActivites56">
+								<div class="hauteurTitre titreActivites"><h3>Notre-Dame-de-la-Garde</h3></div>
+							</div>
+						
+						<div class="cubeActivites2356 centreColonne">
+							<img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="" class="imgActivites56">
+							<div class="hauteurTitre titreActivites"><h3>Parc Longchamp</h3></div>
+						</div>
 					</div>
 				</div>
-			</div>
-			</section>
+		</section>
 	</main>
 
 	<footer>
