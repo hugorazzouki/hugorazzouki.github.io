@@ -488,10 +488,10 @@ margin-top: 0;
  		border-bottom: 3px solid #0065fc;
  }
  .bordureSearch {
- 	width: auto;
+ 	width: 400px;
  }
  .recherche {
- 	width: 100%;
+ 	width: 300px;
  	border: none;
  }
  .boutonRecherche {
@@ -511,4 +511,12 @@ margin-top: 0;
  .backBlanc2 {
  	margin-bottom: 5%;
  }
+ }
+ @media screen and (max-width: 405px) {
+ 	.bordureSearch {
+ 		width: auto;
+ 	}
+ 	.recherche {
+ 		width: 100%;
+ 	}
  }
