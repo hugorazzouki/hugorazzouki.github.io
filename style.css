@@ -4,6 +4,10 @@ html,body {
 	font-family: raleway;
 	margin: 0px;
 }
+.tailleMaxEcran {
+	max-width: 1500px;
+	margin: auto;
+}
 main,header {
 	width: 95%;
 	margin: 0px auto;
